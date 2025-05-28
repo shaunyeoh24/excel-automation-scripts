@@ -3,11 +3,11 @@
  *
  * Applies the formula dynamically for each row based on start and end row indexes.
  *
- * @param sheet             The ExcelScript worksheet where formulas will be inserted
- * @param startRowIndex     Row index to start inserting formulas (0-based)
- * @param endRowIndex       Row index to stop inserting formulas (0-based)
- * @param targetColumn      Column letter where formulas will be inserted (e.g., "AA")
- * @param formulaTemplate   Function that generates a formula string based on a row number
+ * @param sheet             The ExcelScript worksheet where formulas will be inserted.
+ * @param startRowIndex     Row index to start inserting formulas (0-based).
+ * @param endRowIndex       Row index to stop inserting formulas (0-based).
+ * @param targetColumn      Column letter where formulas will be inserted (e.g., "AA").
+ * @param formulaTemplate   Function that generates a formula string based on a row number.
  */
 
 function insertFormulaColumn(
