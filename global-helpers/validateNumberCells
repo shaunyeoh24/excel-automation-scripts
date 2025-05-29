@@ -1,0 +1,15 @@
+/**
+ * Validates that the specified cells contain non-empty numeric values (integers or floats).
+ * 
+ * @param sheet - The Excel worksheet to validate.
+ * @param cells - An array of cell addresses to check (e.g., ["E8", "E9"]).
+ * @returns An array of error messages for invalid or empty cells.
+ */
+function validateNumberCells(sheet: ExcelScript.Worksheet, cells: string[]): string[] {
+    return validateCellsCore(
+        sheet,
+        cells,
+        (v) => typeof v === "number" && !isNaN(v),
+        (cell) => `${cell} must be a number.`
+    );
+}
